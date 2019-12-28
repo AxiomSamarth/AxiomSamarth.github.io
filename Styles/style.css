@@ -1,8 +1,8 @@
-*{
+body{
     margin: 0 0;
     padding: 0 0;
-    overflow: hidden;
     font-family: Lato;
+    overflow-x: hidden;
 }
 
 .navbar-default{
@@ -13,7 +13,8 @@
     margin-bottom: 0;
     background-color: transparent;
     border: none;
-    width: auto;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-header > a{
