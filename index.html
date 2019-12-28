@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samarth Deyagond</title>
+        <meta charset="utf-8"/>
+        <script src="Scripts/jquery.min.js"></script>
+        <script src="Scripts/SmoothScroll.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <link rel="shortcut icon" href="images/others/favicon.ico" />
+        <link href="Scripts/bootstrap.min.css" rel="stylesheet" />
+        <link href="Styles/style.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Satisfy|Lato|Parisienne' rel='stylesheet' type='text/css'>
+        <meta name = "Description" content = "Samarth Deyagond is a Computer Science enthusiast. He loves to create ideas and realize them. He is intended to transform himself from critical thinking to cognitive flexibility. Presenting here, is his portfolio and career interests" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,target-densitydpi=device-dpi" />
+        <script>
+            $(document).ready(function () {
+                $('a[href^="#"]').on('click', function (e) {
+                    e.preventDefault();
+    
+                    var target = this.hash,
+                    $target = $(target);
+    
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 1200, 'swing', function () {
+                        window.location.hash = target;
+    
+                    });
+                });
+            });    
+        </script>
+    </head>
+    <body>
+        
+        <!--Banner begins. This would have the navigation bar and the business card-->
+
+        <div id="banner">
+                <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Axiom</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#banner">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#details">More</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
+                                    <li><a href="#testimonials">Testimonials</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>  
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4">
+                        <div class="jumbotron text-center">
+                            <h1 style="font-family: Parisienne;">Samarth Deyagond</h1> 
+                            <h4>R&amp;D Engineer @ Hewlett Packard Enterprise | Software Defined Networking | Championing University Relations</h4>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Banner ends-->
+        <!--About section begins. This would have a paragraph or two about me-->
+
+        <div id="about">
+            <div class="container-fluid">
+                <div class="jumbotron text-center">
+                    <h2>About me!</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <p><b>"Old transport infrastructure do not accomodate the new traffic".</b> You're correct! I am referring to the Data Center Networking.</p>
+
+                        <p>My current interest and work is in Software Defined Networks associated with Plexxi Composable Networking at Hewlett Packard Enterprise&trade; to bring-in disruption in the Data Center Networking with the new - high bandwidth, mesh topology based, SDN stack of HPE Composable Fabric.</p>
+        
+                        <p>When not at HPE offices, you will find me driving my Ford Aspire or writing technical &amp; non-technical articles or creating video tutorials on YouTube or reading philosophies or at home, telling some jokes to my friends &amp; family that are only sometimes funny! </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--About section ends-->
+        <!-- More on me section to showcase the academics, career, interests, honours, etc-->
+        <div id="details">
+            <div class="container">
+                <div class="jumbotron text-center">
+                    <h2>What more am I?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 topic" data-toggle="modal" data-target="#CareerAcademics">
+                                <figure>
+                                    <center><img src="images/details/education.png" class="img img-responsive" /></center>
+                                </figure>
+                                <figcaption class="text-center">
+                                    Career &amp; academics
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 topic" data-toggle="modal" data-target="#TechnicalSkills"> 
+                                <figure>
+                                    <center><img src="images/details/skills.png" class="img img-responsive" /></center>
+                                </figure>
+                                <figcaption class="text-center">
+                                    Technical skills
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 topic" data-toggle="modal" data-target="#WorkExperience">
+                                <figure>
+                                    <center><img src="images/details/internships.png" class="img img-responsive" /></center>
+                                </figure>
+                                <figcaption class="text-center">
+                                    Work Experience
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 topic" data-toggle="modal" data-target="#Projects">
+                                <figure>
+                                    <center><img src="images/details/intern.png" class="img img-responsive" /></center>
+                                </figure>
+                                <figcaption class="text-center">
+                                    Projects
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 topic" data-toggle="modal" data-target="#Awards">
+                                <figure>
+                                    <center><img src="images/details/extra.png" class="img img-responsive" /></center>
+                                </figure>
+                                <figcaption class="text-center">
+                                    Honours and Awards
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 topic" data-toggle="modal" data-target="#Youtube">
+                                <figure>
+                                    <center><img src="images/details/publications.png" class="img img-responsive" /></center>
+                                </figure>
+                                <figcaption class="text-center">
+                                    Content on YouTube 
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--More on me section ends-->
+
+        <div id="testimonials">
+            <div class="jumbotron text-center">
+                <h3>What people have got to say?</h3>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="row testimony">
+                        <div class="col-md-7 col-md-offset-4 col-xs-10 col-xs-offset-1">
+                            <div class="row content">
+                                <div class="col-sm-3">
+                                    <center><img src="images/testimonials/p1.JPG" class="img-circle img-responsive" /></center>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p>
+                                        Samarth Deyagond, as a person is simple and down to earth, having high thoughts.
+                                        He is ambitious and passionate about his work. Ever since I have known him, 
+                                        he has been my inspiration. I respect him from the deepest of my heart.
+                                        A person with good spirits. HE IS A PERSON OF INTEREST AND I ADMIRE HIM A LOT!
+                                        Hereby, wishing him all the success and happiness.
+                                        <br /><br /><span style="float:right">-Nidhi Kulkarni</span>
+                                    </p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row testimony">
+                        <div class="col-md-7 col-xs-10 col-xs-offset-1">
+                            <div class="row content">
+                                <div class="col-sm-3">
+                                    <center><img src="images/testimonials/p2.jpg" class="img-circle img-responsive" /></center>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p>
+                                        Samarth is the most hard working person I've known in my life. 
+                                        Put that hard work with intelligence and the knowledge that Sam 
+                                        has and you have what he is today! Really proud of my best friend.
+                                        <br /><br /><span style="float:right">-Pranav Byali</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row testimony" style="margin-bottom:5em;">
+                        <div class="col-md-7 col-md-offset-4 col-xs-10 col-xs-offset-1">
+                            <div class="row content">
+                                <div class="col-sm-3">
+                                    <center><img src="images/testimonials/p3.JPG" class="img-circle img-responsive" /></center>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p>
+                                        Samarth is a proactive and tireless contributor who would make a great addition to any team. As his elder brother I have known him since his birth, he is one of the hardworking persons known. As a professional I can vouch for his technical expertise. I have seen him getting thorough knowledge of new technologies and implementing it with ease. More than motivation, he is driven by discipline which can be clearly seen in the accomplishment of his 2017 resolution of ‘one project per month’.
+                                        <br /><br /><span style="float:right">-Sagar Deyagond</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Testimonials ends-->
+
+        <!--Contact-->
+
+    <div id="contact">
+            <div class="jumbotron text-center">
+                <h3>Contact</h3>
+            </div>
+            <div class="container-fluid">
+    
+            <div class="row">
+                    <div class="col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1" id="message">
+                        <h4>A small message : </h4><hr />
+                        <p>
+                            "Explore everything in life. As much as you can and enjoy everything you do. Don't die a specialist because a specialist is one who knows everything about something but nothing about anything else."
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-md-offset-0 col-xs-10 col-xs-offset-1">
+                        <h4>Interests </h4><hr />
+                        <ul>
+                            <li>Mentorship</li>
+                            <li>Travelling</li>
+                            <li>Technical Talks</li>
+                            <li>Volunteering</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1" id="social-network">
+                        <h4>Say hi, you stalker @ : </h4><hr />
+                        <ul>
+                            <li>
+                                <a href="https://linkedin.com/in/samarth.deyagond" target="_blank"><img src="images/contact/icon-li.png" class="img-responsive" style="background-color:skyblue" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/samarth.deyagond" target="_blank"><img src="images/contact/icon-fb.png" class="img-responsive" style="background-color:skyblue" /></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/deyagondsamarth" target="_blank"><img src="images/contact/icon-tw.png" class="img-responsive" style="background-color:blue" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/_teddy_winters_/" target="_blank"><img src="images/contact/insta.jpg" class="img-responsive" style="background-color:white" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                        <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0" style="margin-top: 1.5em;"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15592.149587984257!2d76.6135393!3d12.3132685!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ad797cbfc78d07a!2sSri+Jayachamarajendra+College+of+Engineering!5e0!3m2!1sen!2sin!4v1439146969877"></iframe>
+                    
+            </div>
+        </div>  
+        <!--Contact ends-->
+    
+        <footer>
+            <a href="https://dev.to/axiomsamarth" style="display:inline">
+            <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" style="background-color:yellow" alt="Samarth     Deyagond's DEV Profile" height="30" width="30" />
+            </a>Developed by Samarth Deyagond.
+        </footer>
+
+        <!--Modals of the page-->
+        <!-- Modal -->
+        <div id="CareerAcademics" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">                        
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Career and academics</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Bachelor's Degree in Computer Science and Engineering from Sri Jayachamarajendra College of Engineering, Mysuru with a distinction merit and 9.34 CGPA.
+                        </p>
+                        <p>
+                            Pre University Course from Karnataka Science College, Dharwad majored in Science with a merit of 98.67%
+                        </p>
+                        <p>
+                            Metriculation from Pavan English Medium High School, Dharwad with a merit of 98.72% securing 6<sup>th</sup> rank to Karnataka State.
+                        </p>
+                    </div>
+                </div>                       
+            </div>
+        </div>
+
+        <div id="TechnicalSkills" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">                        
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Technical Skills</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <b>Programming Languages</b><br />
+                            C, Python, Erlang, Java, PowerShell, Bash
+                        </p>
+                        <p>
+                            <b>Web Development</b><br />
+                            HTML, CSS, JS, jQuery, Node.js, Bootstrap framework, PHP, REST Framework, Python-Flask framework, Python-Falcon framework
+                        </p>
+                        <p>
+                            <b>Database</b><br />
+                            MySQL, MongoDB
+                        </p>
+                        <p>
+                            <b>Domain exposures</b><br />
+                            Software Defined Networking, Open Service Broker APIs, VMware Cloud Foundation Private Cloud Solution on HPE Synergy, Virtualization, Server Platform Software Development, Machine Learning, Deep Learning, Natural Language Processing, Image Processing, Algorithms, Data Structures and Object Oriented Programming
+                        </p>
+                    </div>
+                </div>                       
+            </div>
+        </div>
+
+        <div id="WorkExperience" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">                        
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Work Experience</h4>
+                    </div>
+                    <div class="modal-body">                        
+                        <p>
+                            My current interest and work is around Software Defined Networking (SDN) associated with Plexxi Composable Networking, Hewlett Packard Enterprise&trade; to bring-in disruption in the data center networking with the new - high bandwidth, mesh topology based, SDN stack.
+                        </p>
+                        <p>
+                            Prior to this, I was aligned with Enterprise Solutions Engineering & Reference Architecture with special focus on building Private Cloud on HPE infrastructure along side with exploring Docker, Kubernetes, Cloud-Native Platform. As an active member of HPE University Relations team, I champion campus recruitment for HPE and host the university events.
+                        </p>
+                        <p>
+                            I have also dealt with Web Development, Machine Learning, Natural Language Processing, Image Processing, Server Platform Software Development, Private Cloud solutions, Virtualization. Besides having a good understanding & execution of Software Development Life Cycle, I am agile in nature.
+                        </p>    
+                        <p>                        
+                            I also had opportunities to intern at Hewlett Packard Enterprise, Indian Academy of Science, Indian Institute of Science (IISc Bengaluru), Indian Institute of Technology, Ropar, Compiler Tree Technologies and International School for Computer Technology during the course of my technical education.
+                        </p>
+                    </div>
+                </div>                       
+            </div>
+        </div>
+
+        <div id="Projects" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">                        
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Projects</h4>
+                    </div>
+                    <div class="modal-body">
+                        <b>Here are the projects implemented out of my interest and curiosity - </b>
+                        <p>
+                            <b>Jarvis</b> - This project is focussed to make an intelligent and interative interface for assistance and automation. It is built with a combination of neural networks, machine learning, human computer interaction techniques, web scraping, etc.
+                        </p>
+                        <p>
+                            <b>Video Contect Predictor</b> - Deep learning application that employs Convolutional Neural Networks helps to predict the context of the scene to be a 'Happy Moment' or 'Fight and Rage'.
+                        </p>
+                        <p>
+                            <b>Emotion Detection from Facial Expressions</b> - This application integrated Convolutional Neural Networks with Image Processing, to extract the facial expressions of people in the image and then classify them into different emotions like Anger, Fear, Happiness, Sad, etc.
+                        </p>
+                        <p>
+                            <b>Prism</b> - A software tool to assist campus recruitment drive by companies
+                        </p>
+                        <p>
+                            <b>Google Chrome Extension</b> - Google Chrome browser extension to customize the background image.
+                        </p>
+                        Do find my all other projects in my <a href="https://github.com/axiomsamarth/">GitHub</a> and <a href="https://linkedin.com/in/samarthdeyagond">LinkedIn</a>
+                    </div>
+                </div>                       
+            </div>
+        </div>
+
+        <div id="Awards" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">                        
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Awards and Honours</h4>
+                    </div>
+                    <div class="modal-body">
+                        <b>Last time when my preparation met an opportuity, below achievements happened - </b>
+                        <p>
+                            Became member of Google Assistant Developers' Community in 2018 by contributing a Google Action on Google Assistant
+                        </p>
+                        <p>
+                            3rd best technical presentation during Intern Project Fair'18 at HPE
+                        </p>
+                        <p>
+                            One of top 20 teams at National Level Hackathon hosted by IIT-Madras in Nov, 2015
+                        </p>
+                        <p>
+                            First prize in an event Webmania of Cyberia-15 during March 2015
+                        </p>
+                        <p>
+                            Third prize at a fourfold personality competition called UTKRISHT-2012
+                        </p>
+                        <p>
+                            Third prize in Shodha-2009, a Mathematics Exhibition hosted by BVBCET, Hubli
+                        </p>
+                        <p>
+                            Felicitated as Pride of Pavan the award given to the best student of my school in 2012
+                        </p>
+                    </div>
+                </div>                       
+            </div>
+        </div>
+
+        <div id="Youtube" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">                        
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Career and academics</h4>
+                    </div>
+                    <div class="modal-body">
+                        <b>Sharing is caring! Find my video courses on YouTube - </b>
+                        <p>
+                            <a href="https://www.youtube.com/playlist?list=PLGgze_XWYIoxH2x6Nq01-jyKB0YIeQUr6">BlockChain with Python</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/playlist?list=PLGgze_XWYIoxH2x6Nq01-jyKB0YIeQUr6">Natural Langauge Processing with Python</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/playlist?list=PLGgze_XWYIoxefl9S9j8WB38jWixfEIeD">
+                            Google Chrome Extension Developement</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/playlist?list=PLGgze_XWYIozLLiSC11F1OvEQrEKb2_w6">
+                            Image Processing using OpenCV and Python</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/playlist?list=PLGgze_XWYIozLLiSC11F1OvEQrEKb2_w6">
+                            How to answer HR and Managerial Questions in Interviews</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/playlist?list=PLGgze_XWYIozLLiSC11F1OvEQrEKb2_w6">
+                            k-Nearest Neighbours</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/playlist?list=PLGgze_XWYIoxeROk6hO7U9DBWbcpn-kid">
+                            Data Structures with C</a>
+                        </p>
+                    </div>
+                </div>                       
+            </div>
+        </div>
+    </body>
+</html>

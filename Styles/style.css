@@ -1,0 +1,215 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    overflow: hidden;
+    font-family: Lato;
+}
+
+.navbar-default{
+    background-color: transparent;
+}
+
+.navbar{
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    width: auto;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-header > a{
+    color: whitesmoke;
+}
+
+#banner{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/others/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#banner .container-fluid{
+    height: inherit;
+    background-color: rgba(0, 0, 0 ,0.2);
+}
+
+#banner .container-fluid .jumbotron{
+    background-color: transparent;
+    margin-top: 15%;
+    color: white;
+}
+
+#about{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/others/design-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about .container-fluid .jumbotron{
+    background-color: transparent;
+    margin-top: 10vh;
+    margin-bottom: 0;
+}
+
+#about .container-fluid{
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#about .container-fluid p{
+    font-size: medium;
+    position: relative;
+}
+
+#details{
+    min-height: 100vh;
+    width:100vw;
+    background-image: url('../images/others/ev.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 3em;
+    box-sizing: border-box;    
+}
+
+#details .container > .jumbotron{
+    background-color: transparent;
+    color: white;
+}
+
+#details .topic{
+    background-color: #f7f7f7;
+    min-height: 300px;
+    padding: 3em 3em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    opacity: 0.9;
+}
+
+#details img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 2em;
+}
+
+.modal-content{
+    height: 80vh;
+    border: none;
+}
+
+.modal-body p{
+    margin: 2em 1em;
+}
+
+#testimonials{
+    min-height: 100vh;
+    width:100vw;
+    background-image: url('../images/testimonials/slide1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#testimonials .jumbotron{
+    background-color:transparent;
+    color:black;
+    margin:0;
+}
+
+#testimonials .testimony{
+    margin:2em 0;
+    opacity:0.9;
+    transition:all ease-in-out 1s;
+}
+
+
+#testimonials .testimony .content{
+    background-color:mintcream;
+    padding:2em 2em;
+    box-sizing:border-box;
+    border-radius:5px;
+    text-align:justify;
+}
+
+#testimonials .testimony .content img{
+    margin:1em 0;
+}
+
+#contact{
+    width:100vw;
+    background-image: url('../images/others/login.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 3em;
+    box-sizing: border-box;   
+    color: white; 
+}
+
+#contact .jumbotron{
+    background-color: transparent;
+}
+
+#contact .container{
+    padding:5em 5em;
+    box-sizing:box-border;
+    margin-bottom:-2em;
+}
+
+#contact #social-network ul li{
+    list-style-type: none;
+    float: left;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 2px 0.5em;
+}
+
+#contact #social-network img{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color:black;
+    text-align:center;
+    padding:1em 1em;
+    box-sizing:border-box;
+    color:white;
+    position:relative;
+    bottom:0;
+}
+
+
+@media screen and (max-width:1024px){
+
+    .navbar-default{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    #banner{
+        background-image: url('../images/others/mob-banner.jpg');
+    }
+
+    #banner .container-fluid .jumbotron{
+        margin-top: 60%;
+    }
+
+    #details .topic{
+        margin: 1em 1em;
+    }
+        
+    .modal-content{
+        height: auto;
+        border: none;
+    }
+}
