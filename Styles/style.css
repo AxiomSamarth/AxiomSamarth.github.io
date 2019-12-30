@@ -15,6 +15,7 @@ body{
     border: none;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-header > a{
@@ -94,8 +95,14 @@ body{
     min-height: 300px;
     padding: 3em 3em;
     box-sizing: border-box;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     opacity: 0.9;
+}
+
+#details .topic:hover{
+    transform: scale(1.1);
+    transform-origin: center;
+    transition-duration: 0.4s;
 }
 
 #details img{
@@ -174,14 +181,15 @@ body{
     list-style-type: none;
     float: left;
     position: relative;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin: 2px 0.5em;
 }
 
 #contact #social-network img{
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 50%;
 }
 
 footer{
