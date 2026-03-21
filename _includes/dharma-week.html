@@ -1,0 +1,14 @@
+{% assign dharma_default = site.data.dharma | first %}
+<aside class="dharma-week" aria-label="Dharma this week">
+  <p class="dharma-week__eyebrow">Dharma this week</p>
+  <blockquote class="dharma-week__quote">
+    <p class="dharma-week__source" data-dharma-source>{{ dharma_default.source }}</p>
+    <p class="dharma-week__gloss" data-dharma-gloss>{{ dharma_default.gloss }}</p>
+  </blockquote>
+  {% if dharma_default.ref %}
+    <p class="dharma-week__ref" data-dharma-ref>{{ dharma_default.ref }}</p>
+  {% else %}
+    <p class="dharma-week__ref" data-dharma-ref hidden></p>
+  {% endif %}
+</aside>
+<script type="application/json" id="dharma-data">{{ site.data.dharma | jsonify }}</script>

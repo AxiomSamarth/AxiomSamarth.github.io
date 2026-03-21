@@ -1,0 +1,15 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__dharma">
+    <div class="site-footer__dharma-inner">
+      {% include dharma-week.html %}
+    </div>
+  </div>
+  <div class="site-footer__inner">
+    <p class="site-footer__copy">© {{ 'now' | date: '%Y' }} {{ site.author.name }}. Built with Jekyll for GitHub Pages.</p>
+    <ul class="site-footer__links">
+      <li><a href="{{ site.social.github | prepend: 'https://github.com/' }}" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+      <li><a href="{{ site.social.linkedin | prepend: 'https://linkedin.com/in/' }}" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+      <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+    </ul>
+  </div>
+</footer>
