@@ -1,0 +1,78 @@
+---
+layout: default
+title: Blogs
+description: Technical essays, engineering notes, and occasional personal writing.
+body_class: writing-page
+---
+
+<section class="section" aria-labelledby="blogs-page-title">
+  <p class="section__label">Blogs</p>
+  <h1 id="blogs-page-title" class="section__title">Blogs</h1>
+  <p class="section__intro" id="blogs-intro">
+    Newest first. Each post uses up to four topic tags — Tech, Life, Travel, Spirituality — plus search across title and
+    description. Pagination keeps longer lists fast.
+  </p>
+
+  <div class="filters" data-writing-filters>
+    <label class="visually-hidden" for="post-search">Search posts</label>
+    <input
+      type="search"
+      id="post-search"
+      class="filters__search"
+      placeholder="Search posts…"
+      autocomplete="off"
+      data-post-search
+    >
+    <div class="filters__quick" role="group" aria-label="Filter by topic">
+      <button type="button" class="chip" data-filter-tag="tech" aria-pressed="false">Tech</button>
+      <button type="button" class="chip" data-filter-tag="life" aria-pressed="false">Life</button>
+      <button type="button" class="chip" data-filter-tag="travel" aria-pressed="false">Travel</button>
+      <button type="button" class="chip" data-filter-tag="spirituality" aria-pressed="false">Spirituality</button>
+    </div>
+  </div>
+
+  <p class="visually-hidden" aria-live="polite" data-filter-status></p>
+
+  <ul class="post-list" id="search-results" hidden aria-label="Filtered posts (all pages)"></ul>
+
+  <ul class="post-list" id="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <a
+          class="post-card"
+          href="{{ post.url | relative_url }}"
+          data-post-card
+        >
+          <p class="post-card__date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></p>
+          <h2 class="post-card__title">{{ post.title }}</h2>
+          <p class="post-card__excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
+          {% if post.tags.size > 0 %}
+            <div class="post-card__tags">
+              {% for tag in post.tags limit: 4 %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.total_pages > 1 %}
+    <nav class="pagination" aria-label="Blogs pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">← Newer</a>
+      {% else %}
+        <span aria-disabled="true" style="opacity: 0.45">← Newer</span>
+      {% endif %}
+
+      <span class="current" aria-current="page">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">Older →</a>
+      {% else %}
+        <span aria-disabled="true" style="opacity: 0.45">Older →</span>
+      {% endif %}
+    </nav>
+  {% endif %}
+</section>

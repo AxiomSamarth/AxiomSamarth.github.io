@@ -1,0 +1,18 @@
+<header class="site-header" role="banner">
+  <div class="site-header__inner">
+    <a class="site-logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="visually-hidden">Menu</span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary" data-nav>
+      <ul class="site-nav__list">
+        <li><a href="{{ '/' | relative_url }}#home">Home</a></li>
+        <li><a href="{{ '/' | relative_url }}#about">About</a></li>
+        <li><a href="{{ '/' | relative_url }}#work">Work</a></li>
+        <li><a href="{{ '/writing/' | relative_url }}">Blogs</a></li>
+        <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

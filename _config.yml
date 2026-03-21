@@ -1,0 +1,47 @@
+# Site — set url to your live GitHub Pages URL (no trailing slash).
+# If this site is a *project* page (username.github.io/repo/), set baseurl: "/repo-name" and url: "https://username.github.io"
+title: Samarth Deyagond
+email: deyagondsamarth@gmail.com
+description: >-
+  Staff software engineer building distributed systems, Kubernetes operators,
+  and cloud-native platforms. Portfolio, blogs, and contact.
+url: "https://axiomsamarth.github.io"
+baseurl: ""
+
+author:
+  name: Samarth Deyagond
+  twitter: # optional
+  picture: /assets/images/profile-placeholder.svg
+
+social:
+  github: AxiomSamarth
+  linkedin: samarthdeyagond
+
+# Resume PDF path (place your file at this path in the repo)
+resume_path: /assets/Samarth_Deyagond_2026.pdf
+
+markdown: kramdown
+highlighter: rouge
+permalink: /writing/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/writing/page:num/"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# Performance & feeds
+feed:
+  posts_limit: 20
+
+sass:
+  style: compressed

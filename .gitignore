@@ -1,0 +1,9 @@
+# Optional cache when importing Medium via curl (see scripts/import_medium_feed.rb)
+scripts/medium-feed.xml
+
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.bundle
